@@ -65,12 +65,12 @@ function shoppingList(ml){
     //2 loop though the shopping list
     //3 create an li
     //4 append the item to list ->appendChild()
+
     list = document.querySelector(".shopping");
     for(let item of ml){
-        console.log(item)
+        //console.log(item)
         newLi = document.createElement("li");
         list.appendChild(newLi);
-        //newLi.appendChild(ml[item])
         newLi.textContent = item;
 
     }
@@ -79,3 +79,13 @@ function shoppingList(ml){
 
 let myList = ['bread', 'cheese', 'green pepper']
 shoppingList(myList)
+
+
+
+//-----------------------------------------------------------------------------------------------------------
+//css changes in js
+
+
+document.querySelector(".shopping")
+
+
