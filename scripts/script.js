@@ -85,7 +85,6 @@ shoppingList(myList)
 //-----------------------------------------------------------------------------------------------------------
 //css changes in js
 
-
-document.querySelector(".shopping")
+//test
 
 
