@@ -25,6 +25,8 @@
 
 
 //---------------------------------------------------------------------------------------------------------------
+//circle thing.
+/*
 
 radius = prompt("enter radius");
 const radiusPara = document.querySelector("#radius");
@@ -42,14 +44,38 @@ makeCircle()
 } else{
     //alert("The value entered is not a number.")
     resultPara.textContent = "The value entered is not a number."
-}
+
+}*/
 
 
 //------------------------------------------------------------------------------------------------
 //document stuff
 
 //const radiusPara = document.querySelector("#radius")
-console.log(radiusPara)
+//console.log(radiusPara)
 // const resultPara = document.querySelector("#result")
-console.log(resultPara)
+//console.log(resultPara)
 
+
+//------------------------------------------------------------------------------------------------------
+//shopping array thing
+
+function shoppingList(ml){
+    //1 select and store a ref to the ul
+    //2 loop though the shopping list
+    //3 create an li
+    //4 append the item to list ->appendChild()
+    list = document.querySelector(".shopping");
+    for(let item of ml){
+        console.log(item)
+        newLi = document.createElement("li");
+        list.appendChild(newLi);
+        //newLi.appendChild(ml[item])
+        newLi.textContent = item;
+
+    }
+}
+
+
+let myList = ['bread', 'cheese', 'green pepper']
+shoppingList(myList)
